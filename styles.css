@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+
+:root{
+    --silver: #cccbcd;
+    --white: #fcfcfc;
+    --ultraviolet: #5d5d81;
+    --spacecadet: #3B3355;
+    --periwinkle: #5D5D81;
+}
+
+::selection{
+    background: black;
+    color: white;
+}
+
+body {
+    background-color: var(--spacecadet);
+    /* space-cadet */
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 20px;
+    color: var(--silver);    /* white */
+    padding: 5%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 80% 20%;
+}
+
+.about-me {
+    position: fixed;
+    grid-column-start: 1;
+}
+
+.desc {
+    grid-column-start: 2;
+}
+
+a{
+    color: var(--white);
+    /* font-weight: bold;
+    text-decoration: underline; */
+}
+
+.experience-row{
+    padding: 3%;
+}
+
+.experience-row:hover{
+    background: var(--ultraviolet);
+    /* filter: brightness(1.4); */
+}
+
+.desc .experience .experience-desc {
+    display: inline-block;
+}
+
+.puppies img {
+    width: 100px;
+    height: 100px;
+}
