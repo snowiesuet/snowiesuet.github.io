@@ -5,8 +5,8 @@
     --silver: #cccbcd;
     --white: #fcfcfc;
     --ultraviolet: #5d5d81;
-    --spacecadet: #3B3355;
-    --periwinkle: #5D5D81;
+    --spacecadet: #28222b;
+    --periwinkle: #c9c9ee;
 }
 
 ::selection{
@@ -32,11 +32,64 @@ body {
 .about-me {
     position: fixed;
     grid-column-start: 1;
+
+}
+
+.desc-text {
+    padding: 0 5%;
+}
+
+.experience-row {
+    padding: 5%;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        display: block;
+    }
+    .about-me {
+        position: unset;
+    }
+    .experience-row {
+        padding: 0;
+    }
+    .desc-text {
+        padding: 0;
+    }
+    .experience-row-header{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+@keyframes rainbow_animation {
+
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
 }
 
 .desc {
     grid-column-start: 2;
 }
+
 
 a{
     color: var(--white);
@@ -44,8 +97,25 @@ a{
     text-decoration: underline; */
 }
 
-.experience-row{
-    padding: 3%;
+mark{
+    /* background: var(--periwinkle); */
+    color: var(--white);
+    animation: 2s highlight 1s normal forwards;
+    font-size: 1.5rem;
+    padding: 0 10px;
+    background-color: none;
+    background: linear-gradient(90deg, var(--periwinkle) 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+}
+
+
+.experience-row-header{
+    display: flex;
+    justify-content: space-between;
+    span{
+        font-style: italic;
+    }
 }
 
 .experience-row:hover{
@@ -60,4 +130,21 @@ a{
 .puppies img {
     width: 100px;
     height: 100px;
+}
+
+@keyframes highlight {
+    0% {
+        background-position: 100% 0;
+    }
+
+    30%,
+    70% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 0;
+        color: black;
+        /*Corrected this line for proper ending position*/
+    }
 }

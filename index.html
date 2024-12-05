@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snowie's Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Links to the CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
 </head>
 
 <body>
@@ -16,70 +17,117 @@
             <div>I build websites</div>
             <a href="#about">About Me</a>
             <a href="#experience">Experiences</a>
-            <a href="#projects">Projects</a>
         </div>
 
-        <div class="desc" id="about">
-            <p>I'm a web developer connecting design, user experience, and the backend—the parts you don't usually see.
-                I have over 10 years of experience in web development, from the Geocities, Blogger, and Tumblr days to
-                now.</p>
-            <p>I'm grateful to have the opportunity to work on some amazing projects in my career: from start-up, to
-                Fintech, creative agencies and corporate companies.</p>
+        <div class="desc" id="experience">
+            <div class="desc-text">
+                <p>I'm a web developer connecting design, user experience, and the backend—the parts you don't usually see.
+                    I have over 10 years of experience in web development, from the <span class="rainbow_text_animated">Geocities</span>, <span class="rainbow_text_animated">Blogger</span>, <span class="rainbow_text_animated">mySpace</span> and <span class="rainbow_text_animated">Tumblr</span> days to
+                    now.</p>
+                <p>I'm grateful to have the opportunity to work on some amazing projects in my career: from <a href="www.oddup.com">start-up</a>, to
+                <a href="www.citi.com">Fintech</a>, <a href="www.mrm.com">creative agencies</a> and <a href="www.ford.com">corporate companies</a>.</p>
+                <p>When I'm not coding, I try not to be a noob in video games: Stardew Valley, Overwatch, TFT, Baldur's Gate, Zelda, etc</p>
+            </div>
             <div class="experience" id="experience">
                 
                     <div class="experience-row">
-                        <span>2020 - Present</span>
-                        <a href="https://www.ford.com/">Ford Senior Front-end Developer</a>
-                        <i>(contract/full-time)</i>
+                        <div class="experience-row-header"><a href="https://www.ford.com/"><mark>Ford</mark> - Senior Front-end Developer</a>
+                        <span>2020 - Present (contract/full-time)</span>
+                    </div>
                         <p class="experience-desc">Led frontend development for Ford's Trade-In application and Delivery
                             Day Tool React Native iOS app, ensuring seamless API integration, intuitive user experiences,
                             and alignment with business goals. Improved development processes through code reviews and
                             cross-team collaboration.</p>
-                        <i class="fab fa-react"></i> <i class="fab fa-react-native"></i>
-                        <!-- Font Awesome icons (you'll need to include Font Awesome) -->
                     </div>
                 <div class="experience-row">
-                    <span>2021 - 2023</span>
-                    <a href="https://www.mrm.com/en/">MRM - Senior Front-end Developer</a>
-                    <i>(freelance/contract)</i>
+                    <div class="experience-row-header">
+                        <a href="https://www.mrm.com/en/"><mark>MRM</mark>- Senior Front-end Developer</a>
+                        <span>2021 - 2023 (freelance/contract)</span>
+                    </div>
 
                     <p class="experience-desc">Contributed in MRM's creative agency, delivering high-quality solutions
                         aligned with client brand standards under tight deadlines using React.js, Node.js, AEM, jQuery,
                         and TypeScript. Collaborated effectively with cross-functional teams to meet demanding project
                         timelines.
-                        <i> < / >React.js, React Native, Node.js, TypeScript, jQuery, AEM, Handlebars</i>
                     </p>
+                    <i>
+                        < />React.js, React Native, Node.js, TypeScript, jQuery, AEM, Handlebars
+                    </i>
+
                 </div>
                 <div class="experience-row">
-                    <span>2020 - Present</span> Freelance
+                    <mark>Freelance</mark>
+                    <span>2018 - 2020</span> 
                     <p class="experience-desc">Create & design web solutions for multiple projects, setup UI framework and integrate backend API into projects.</p>
                     <i> < / >Vue.js, Node.js</i>
                 </div>
                 <div class="experience-row">
-                    <span>2020 - Present</span> Freelance
+                    <div class="experience-row-header">
+                        <a href="https://landor.com/en/"><mark>FITCH</mark>- UI Prototyper (Contract)</a>
+                        <span>2017 - 2018 (freelance/contract)</span>
+                    </div>
+
                     <p class="experience-desc">Developed interactive digital experiences for high-traffic retail environments. Contributed to the development of
                     Pacific Place, a luxury Hong Kong shopping mall averaging 5,000 daily visitors, and implemented interactive kiosks
                     across multiple Swire Properties malls using React.js and Node.js.</p>
                     <i> < / >React.js, Meteor.js, Handlebars.js, Node.js, jQuery</i>
                 </div>
+         
                 <div class="experience-row">
-                    <span>2020 - Present</span> Freelance
-                    <p class="experience-desc">Developed interactive digital experiences for high-traffic retail environments.
-                        Developed rapid prototypes for visualization & validation purposes to identify issues from user tests while developing
-                        multiple solutions within UX/UI issues.</p>
-                    <i> < / >React.js, Meteor.js, Handlebars.js, Node.js, jQuery</i>
+
+                    <div class="experience-row-header">
+                        <a href="https://www.citibank.com.sg/ "><mark>Citi, Singapore</mark>- UI Prototyper</a>
+                        <span>MAR 2016 - SEP 2016</span>
+                        <i>(freelance/contract)</i>
+                    </div>         
+
+                    <p class="experience-desc">Developed rapid prototypes for visualization & validation purposes to identify issues
+                        from user tests while
+                        developing multiple solutions within UX/UI issues.</p>
+                    <i> < />HTML, CSS, Bootstrap, jQuery</i>
                 </div>
-                <!-- ... Add remaining experience rows ... -->
+
+
+                <div class="experience-row">
+                    <div class="experience-row-header">
+                        <a href="https://nexxen.com/ "><mark>Tremor Video, Singapore</mark>- Web UI Developer</a>
+                        <span>2014 - 2015</span>
+                    </div>
+
+                    <p class="experience-desc">Responsible for developing wireframes and interaction models that ensure sound UX logic
+                        with clear feasibility for
+                        UI execution & a mobile-first user experience.</p>
+                    <i>  < /> Less.css, Bootstrap, React.js, Backbone.js, Handlebars.js, Marionette.js, Lodash.js/Underscore.js,
+                        Node.js</i>
+                </div>
+
+                <div class="experience-row">
+                    <div class="experience-row-header">
+                        <a href="https://www.favoritemedium.com/ "><mark>Favorite Medium, Singapore</mark>- Front-end Developer</a>
+                        <span>2013 - 2014</span>
+                    </div>
+
+                    <p class="experience-desc">Frontend development for multiple projects, including converting PSD layouts to
+                        pixel-perfect web pages and creating
+                        reusable UI frameworks following best practices and web standards, including cross-browser compliance.</p>
+                    <i>< />Zurb Foundation, Ext.js, jQuery, Drupal, Ruby</i>
+                </div>
+
             </div>
         </div>
     </div>
 
     <div class="puppies">
-        <img src="https://cdn.discordapp.com/attachments/1150451714432979106/1308576063638474863/Untitled.png?ex=673e71ed&is=673d206d&hm=98cf3195636dd52ab5a115eaacb91a2046628d8196f0ae5dae344628c84a2b41&"
+        <!-- <img src="https://cdn.discordapp.com/attachments/1150451714432979106/1308576063638474863/Untitled.png?ex=673e71ed&is=673d206d&hm=98cf3195636dd52ab5a115eaacb91a2046628d8196f0ae5dae344628c84a2b41&"
             alt="Puppy 1">
         <img src="https://cdn.discordapp.com/attachments/1150451714432979106/1308593820316995745/Untitled.png?ex=673e8277&is=673d30f7&hm=54ae362fbefe70a191f70982b9be284aa3aa564a0d6e2749b194356adf97148a&"
-            alt="Puppy 2">
+            alt="Puppy 2"> -->
     </div>
 </body>
 
+<script>
+    window.addEventListener("load", (event) => {
+            new cursoreffects.snowflakeCursor();
+        });
+</script>
 </html>
